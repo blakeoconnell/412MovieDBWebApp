@@ -1,8 +1,13 @@
 <head>
 <title>Simple Database Example (JSP)</title>
+
 </head>
 <body bgcolor=#FFFFFF>
-
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 <h2>
 Simple Database JSP Example
 </h2>
@@ -15,6 +20,31 @@ String jdbcURL    = "jdbc:postgresql:postgres";
 String user       = "webuser";
 String password   = "webuser";
 %>
+
+<div class="row">
+    <div class="col-md-6" id="chartPanel">
+        <h2>This is the Chart Panel</h2>
+
+    </div>
+    <div class="col-md-6" id="controlPanel">
+        <h2>This is the Control Panel</h2>
+        <h4>Sort Results:</h4>
+        <form>
+            By Rating:   
+            <div data-role="main" class="ui-content">
+                    <div data-role="rangeslider">
+                        <label for="rating-min">Rating:</label>
+                        <input type="range" name="rating-min" id="rating-min" value="1" min="1" max="10">
+                        <label for="rating-max">Rating:</label>
+                        <input type="range" name="rating-max" id="rating-max" value="10" min="0" max="10">
+                    </div>
+            </div>
+            By Title: <input type="text" name="title">
+            By Keyword: <input type="text" name="keyword">
+            <input type="submit" name="Submit" value="Submit">
+        </form>
+    </div>
+</div>
 
 <%
 try {
