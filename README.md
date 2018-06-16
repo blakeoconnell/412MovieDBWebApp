@@ -1,10 +1,11 @@
 CSE412 Project 3 
 
 The project 3 implementation uses the following technologies:
-▪ Apache Tomcat
-▪ Postgresql
-▪ Java Server Page (JSP) ▪ JSON
-▪ HTML/Javascript
+* Apache Tomcat
+* Postgresql
+* Java Server Page (JSP) 
+* JSON
+* HTML/Javascript
 
 The following instructions is done on a Windows 10 laptop:
 
